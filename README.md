@@ -6,6 +6,8 @@ I have been working on this project as a graduate research assistant in the math
 ## Dataset 
 The dataset provided consists of 3,522 submissions, with 3365 of those submissions annotated as neutral comments, leaving only 157 comments annotated as positive and negative.  The three variables utilized to train our model came from three open-ended questions asked about the sighting. There are general comments, reaction description, and conflict description. To make use of all all these entries, the answers to the open-ended questions were concatenated.
 
+On this Git are the codebooks for the tests using a kaggle website to check performance with varying class balances. 
+
 ## Data preprocessing
 A preprocessing layer was added using Keras's TextVectorization class. The standardization parameter was set to a custom normalization stripping it of leading and trailing whitespaces, punctuation, and changing all entries to lowercase. Some responses to the open-ended questions include a like to a video of the sighting. The URLs are removed from the comments leaving only the submitters original text. 
 
